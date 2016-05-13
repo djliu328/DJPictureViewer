@@ -2,6 +2,7 @@
 * A PictureViewer Which is easy to realize, You can show photo or image in 
 a few lines of code with it.
 * 一个实现起来比较简单地图片查看器，仅仅几行代码你就可以轻松实现一个转换图片的过程中会有交叠重影效果的查看图片的功能。
+* 代码优化后仅需一行代码就可以实现显示带有过程动画的图片显示功能。
 
 ## <a id="如何使用DJPictureViewer"></a>如何使用DJPictureViewer
 * cocoapods导入：`pod 'DJPictureViewer'`
@@ -16,15 +17,8 @@ a few lines of code with it.
 //你的图片数据源
 NSArray *imageArr = @[@"example1",@"example2",@"example3",@"example4",@"example5"];
 
-//存储数据容器
-NSMutableArray *img = [NSMutableArray array];
-
-for (int i = 0; i < imageArr.count; i ++) {
-    DJPictureViewerModel *model = [[DJPictureViewerModel alloc] initWithimage:imageArr[i]];
-    [img addObject:model];
-}
-//图片查看
-DJPictureViewer *pictureViewer = [[DJPictureViewer alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) imgArr:img];
+//图片查看（仅需一行代码）
+DJPictureViewer *pictureViewer = [[DJPictureViewer alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) imgArr:imageArr];
 [self.view addSubview:pictureViewer];
 ```
 ##### 选择控制定时器开关（可选设置，控制图片自动切换）
