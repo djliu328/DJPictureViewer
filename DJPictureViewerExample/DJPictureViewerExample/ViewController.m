@@ -22,15 +22,8 @@
     //你的图片数据源
     NSArray *imageArr = @[@"example1",@"example2",@"example3",@"example4",@"example5"];
     
-    //存储数据容器
-    NSMutableArray *img = [NSMutableArray array];
-    
-    for (int i = 0; i < imageArr.count; i ++) {
-        DJPictureViewerModel *model = [[DJPictureViewerModel alloc] initWithimage:imageArr[i]];
-        [img addObject:model];
-    }
     //图片查看
-    DJPictureViewer *pictureViewer = [[DJPictureViewer alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) imgArr:img];
+    DJPictureViewer *pictureViewer = [[DJPictureViewer alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) imgArr:imageArr];
     
     //选择控制定时器开关
 //    pictureViewer.startTimer = YES;

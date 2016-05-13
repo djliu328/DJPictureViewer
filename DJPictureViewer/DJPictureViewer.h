@@ -36,7 +36,7 @@
 @property (nonatomic, assign) BOOL             startTimer;
 
 
-- (id)initWithFrame:(CGRect)frame imgArr:(NSMutableArray *)imgArr;
+- (id)initWithFrame:(CGRect)frame imgArr:(NSArray *)imgArr;
 
 
 @end

@@ -34,12 +34,19 @@
 }
 
 //初始化
-- (id)initWithFrame:(CGRect)frame imgArr:(NSMutableArray*)imgArr
+- (id)initWithFrame:(CGRect)frame imgArr:(NSArray *)imgArr
 {
     self = [super initWithFrame:frame];
     if(self != nil) {
         self.backgroundColor = [UIColor blackColor];
         
+        //存储数据容器
+        NSMutableArray *imageArr = [NSMutableArray array];
+        
+        for (int i = 0; i < imgArr.count; i ++) {
+            DJPictureViewerModel *model = [[DJPictureViewerModel alloc] initWithimage:imgArr[i]];
+            [imageArr addObject:model];
+        }
         //初始化背景图片
         [self initWithBackGroungImg:frame];
         
@@ -55,15 +62,15 @@
         
         //初始化PageView
         UIPageControl *pageControl = [[UIPageControl alloc] init];
-        pageControl.numberOfPages = imgArr.count;
+        pageControl.numberOfPages = imageArr.count;
         [pageControl sizeToFit];
         [pageControl setCenter:CGPointMake(frame.size.width / 2.0, frame.size.height - 50)];
         self.pageControl = pageControl;
         [self addSubview:pageControl];
-        self.scrollView.contentSize = CGSizeMake(imgArr.count * frame.size.width, frame.size.height);
+        self.scrollView.contentSize = CGSizeMake(imageArr.count * frame.size.width, frame.size.height);
         
         //图片数组
-        _imgArr = imgArr;
+        _imgArr = imageArr;
 
         _currentPage = -1;
         
