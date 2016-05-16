@@ -131,25 +131,25 @@ static NSString * const DJDataId = @"data";
     return itemWidth * layoutModel.height / layoutModel.width;
 }
 
-/** 返回瀑布流列数 */ //（可选自定义）
+///** 返回瀑布流列数 */ //（可选自定义）
 //- (CGFloat)columnCountInWaterflowLayout:(DJWaterfallsflowLayout *)waterflowLayout
 //{
 //    return 3;
 //}
 //
-/** 返回竖直间距 */
+///** 返回竖直间距 */
 //- (CGFloat)columnMarginInWaterflowLayout:(DJWaterfallsflowLayout *)waterflowLayout
 //{
 //    return 10;
 //}
 //
-/** 返回水平间距 */
+///** 返回水平间距 */
 //- (CGFloat)rowMarginInWaterflowLayout:(DJWaterfallsflowLayout *)waterflowLayout
 //{
 //    return 10;
 //}
 //
-/** 返回边缘间距 */
+///** 返回边缘间距 */
 //- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(DJWaterfallsflowLayout *)waterflowLayout
 //{
 //    return UIEdgeInsetsMake(10, 10, 10, 10);
