@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'DJPictureViewer'
-    s.version      = '0.0.1'
+    s.version      = '1.0.0'
     s.summary      = 'A PictureViewer Which is easy to realize'
     s.homepage     = 'https://github.com/djliu328/DJPictureViewer'
     s.license      = 'MIT'
