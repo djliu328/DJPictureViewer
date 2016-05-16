@@ -30,7 +30,7 @@
     NSArray *imageArr = @[@"example1",@"example2",@"example3",@"example4",@"example5"];
     
     //图片查看
-    DJPictureViewer *pictureViewer = [[DJPictureViewer alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) imgArr:imageArr];
+    DJPicture *pictureViewer = [[DJPicture alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) imgArr:imageArr];
     
     //选择控制定时器开关
     //    pictureViewer.startTimer = YES;

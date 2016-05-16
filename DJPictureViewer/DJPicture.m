@@ -1,14 +1,14 @@
 //
-//  DJPictureViewer.m
-//  DJPictureViewer
+//  DJPicture.m
+//  DJPicture.h
 //
 //  Created by djl on 2016.
 //  Copyright © 2016年 djl. djliu( https://github.com/djliu328 )
 //
 
-#import "DJPictureViewer.h"
+#import "DJPicture.h"
 
-@implementation DJPictureViewer
+@implementation DJPicture
 
 /**
  *  是否开启定时器
@@ -71,7 +71,7 @@
         
         //图片数组
         _imgArr = imageArr;
-
+        
         _currentPage = -1;
         
         /** 展示图片 */
@@ -105,7 +105,7 @@
     shadowImageView.contentMode = UIViewContentModeScaleToFill;
     shadowImageView.frame = CGRectMake(0, frame.size.height-300, frame.size.width, 300);
     [self addSubview:shadowImageView];
-
+    
 }
 
 /**

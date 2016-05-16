@@ -14,7 +14,6 @@
 		0EF4121F1CCF409900915B53 /* DJPictureViewerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4121E1CCF409900915B53 /* DJPictureViewerExampleTests.m */; };
 		0EF4122A1CCF409900915B53 /* DJPictureViewerExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF412291CCF409900915B53 /* DJPictureViewerExampleUITests.m */; };
 		0EF4123D1CCF41A900915B53 /* DJPictureViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0EF412381CCF41A900915B53 /* DJPictureViewer.bundle */; };
-		0EF4123E1CCF41A900915B53 /* DJPictureViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4123A1CCF41A900915B53 /* DJPictureViewer.m */; };
 		0EF4123F1CCF41A900915B53 /* DJPictureViewerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4123C1CCF41A900915B53 /* DJPictureViewerModel.m */; };
 		5041C4B71CE99CA3003305F0 /* DJWaterfallsflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041C4B61CE99CA3003305F0 /* DJWaterfallsflowLayout.m */; };
 		5041C5541CE99CFE003305F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041C4BC1CE99CFE003305F0 /* ViewController.m */; };
@@ -82,6 +81,7 @@
 		5041C5921CE99CFE003305F0 /* DJLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041C5501CE99CFE003305F0 /* DJLayoutCell.m */; };
 		5041C5931CE99CFE003305F0 /* UIButton+DJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041C5531CE99CFE003305F0 /* UIButton+DJButton.m */; };
 		5041C5951CE99D26003305F0 /* layout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5041C5941CE99D26003305F0 /* layout.plist */; };
+		5041C5981CE9B6D1003305F0 /* DJPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041C5971CE9B6D1003305F0 /* DJPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,8 +116,6 @@
 		0EF412291CCF409900915B53 /* DJPictureViewerExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJPictureViewerExampleUITests.m; sourceTree = "<group>"; };
 		0EF4122B1CCF409900915B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF412381CCF41A900915B53 /* DJPictureViewer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DJPictureViewer.bundle; sourceTree = "<group>"; };
-		0EF412391CCF41A900915B53 /* DJPictureViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPictureViewer.h; sourceTree = "<group>"; };
-		0EF4123A1CCF41A900915B53 /* DJPictureViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPictureViewer.m; sourceTree = "<group>"; };
 		0EF4123B1CCF41A900915B53 /* DJPictureViewerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPictureViewerModel.h; sourceTree = "<group>"; };
 		0EF4123C1CCF41A900915B53 /* DJPictureViewerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPictureViewerModel.m; sourceTree = "<group>"; };
 		5041C4B51CE99CA3003305F0 /* DJWaterfallsflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJWaterfallsflowLayout.h; sourceTree = "<group>"; };
@@ -257,6 +255,9 @@
 		5041C5521CE99CFE003305F0 /* UIButton+DJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DJButton.h"; sourceTree = "<group>"; };
 		5041C5531CE99CFE003305F0 /* UIButton+DJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DJButton.m"; sourceTree = "<group>"; };
 		5041C5941CE99D26003305F0 /* layout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = layout.plist; sourceTree = "<group>"; };
+		5041C5961CE9B6D1003305F0 /* DJPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPicture.h; sourceTree = "<group>"; };
+		5041C5971CE9B6D1003305F0 /* DJPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPicture.m; sourceTree = "<group>"; };
+		5041C5991CE9B792003305F0 /* DJPictureViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJPictureViewer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,13 +350,14 @@
 		0EF412371CCF41A900915B53 /* DJPictureViewer */ = {
 			isa = PBXGroup;
 			children = (
-				0EF412381CCF41A900915B53 /* DJPictureViewer.bundle */,
-				0EF412391CCF41A900915B53 /* DJPictureViewer.h */,
-				0EF4123A1CCF41A900915B53 /* DJPictureViewer.m */,
+				5041C5991CE9B792003305F0 /* DJPictureViewer.h */,
+				5041C5961CE9B6D1003305F0 /* DJPicture.h */,
+				5041C5971CE9B6D1003305F0 /* DJPicture.m */,
 				0EF4123B1CCF41A900915B53 /* DJPictureViewerModel.h */,
 				0EF4123C1CCF41A900915B53 /* DJPictureViewerModel.m */,
 				5041C4B51CE99CA3003305F0 /* DJWaterfallsflowLayout.h */,
 				5041C4B61CE99CA3003305F0 /* DJWaterfallsflowLayout.m */,
+				0EF412381CCF41A900915B53 /* DJPictureViewer.bundle */,
 			);
 			name = DJPictureViewer;
 			path = ../DJPictureViewer;
@@ -836,9 +838,9 @@
 				5041C5921CE99CFE003305F0 /* DJLayoutCell.m in Sources */,
 				5041C5831CE99CFE003305F0 /* SDImageCache.m in Sources */,
 				5041C5811CE99CFE003305F0 /* MKAnnotationView+WebCache.m in Sources */,
-				0EF4123E1CCF41A900915B53 /* DJPictureViewer.m in Sources */,
 				5041C5791CE99CFE003305F0 /* MJRefreshGifHeader.m in Sources */,
 				5041C5741CE99CFE003305F0 /* MJRefreshAutoNormalFooter.m in Sources */,
+				5041C5981CE9B6D1003305F0 /* DJPicture.m in Sources */,
 				5041C5661CE99CFE003305F0 /* MJIvar.m in Sources */,
 				5041C5761CE99CFE003305F0 /* MJRefreshBackGifFooter.m in Sources */,
 				5041C55B1CE99CFE003305F0 /* MASConstraintMaker.m in Sources */,

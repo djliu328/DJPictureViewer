@@ -7,11 +7,11 @@
 //
 
 #import "DJWaterfallsflowViewController.h"
-#import "MJExtension.h"
-#import "MJRefresh.h"
+#import "DJPictureViewer.h"
 #import "DJLayoutCell.h"
 #import "DJLayoutModel.h"
-#import "DJWaterfallsflowLayout.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
 #import "UIButton+DJButton.h"
 
 @interface DJWaterfallsflowViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,DJWaterfallsflowLayoutDelegate>
@@ -131,7 +131,7 @@ static NSString * const DJDataId = @"data";
     return itemWidth * layoutModel.height / layoutModel.width;
 }
 
-/** 返回瀑布流列数 */ //（自定义）
+/** 返回瀑布流列数 */ //（可选自定义）
 //- (CGFloat)columnCountInWaterflowLayout:(DJWaterfallsflowLayout *)waterflowLayout
 //{
 //    return 3;
