@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DJLayoutModel.m
 //  DJPictureViewerExample
 //
 //  Created by djl on 2016.
 //  Copyright © 2016年 djl. djliu( https://github.com/djliu328 )
 //
 
-#import <UIKit/UIKit.h>
+#import "DJLayoutModel.h"
 
-@interface ViewController : UIViewController
-
+@implementation DJLayoutModel
 
 @end
-
