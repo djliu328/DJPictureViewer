@@ -14,6 +14,26 @@ a few lines of code with it.
     * 将`DJPictureViewer`文件夹中的所有文件拽入项目中
     * 导入主头文件：`#import "DJPictureViewer.h"`
 
+### 效果图演示
+
+![整体效果图演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/DJPictureViewer.gif)
+
+![瀑布流3列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowthree.png)
+
+![瀑布流2列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowtwo.png)
+
+![瀑布流2列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowtwo.png)
+
+![瀑布流4列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowfour.png)
+
+![瀑布流4列自定义间距演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowfourmid.png)
+
+![图片展示效果演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/pictureView/pictureviewhead.png)
+
+![图片展示过度效果演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/pictureView/pictureviewmid.png)
+
+![图片展示效果演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/pictureView/pictureviewfoot.png)
+
 ##详细使用方法（详细用法可参考示例--DJPictureViewerExample）
 
 ###瀑布流代码实现方法
