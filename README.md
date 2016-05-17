@@ -22,11 +22,7 @@ a few lines of code with it.
 
 ![瀑布流2列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowtwo.png)
 
-![瀑布流2列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowtwo.png)
-
 ![瀑布流4列演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowfour.png)
-
-![瀑布流4列自定义间距演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/waterfullsflow/waterfullsflowfourmid.png)
 
 ![图片展示效果演示](https://github.com/djliu328/DJPictureViewer/raw/master/image/pictureView/pictureviewhead.png)
 
