@@ -258,6 +258,8 @@
 		5041C5961CE9B6D1003305F0 /* DJPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPicture.h; sourceTree = "<group>"; };
 		5041C5971CE9B6D1003305F0 /* DJPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPicture.m; sourceTree = "<group>"; };
 		5041C5991CE9B792003305F0 /* DJPictureViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJPictureViewer.h; sourceTree = "<group>"; };
+		C4EDD5302078660300278935 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		C4EDD5312078666800278935 /* PickerViewerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewerHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -668,6 +670,8 @@
 			children = (
 				5041C5521CE99CFE003305F0 /* UIButton+DJButton.h */,
 				5041C5531CE99CFE003305F0 /* UIButton+DJButton.m */,
+				C4EDD5302078660300278935 /* Macros.h */,
+				C4EDD5312078666800278935 /* PickerViewerHeader.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1004,6 +1008,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DJPictureViewerExample/Class/Other/PickerViewerHeader.h";
 				INFOPLIST_FILE = DJPictureViewerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1016,6 +1021,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DJPictureViewerExample/Class/Other/PickerViewerHeader.h";
 				INFOPLIST_FILE = DJPictureViewerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

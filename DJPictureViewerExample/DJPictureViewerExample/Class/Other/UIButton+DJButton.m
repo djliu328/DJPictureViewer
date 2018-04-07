@@ -17,7 +17,7 @@
     [superView addSubview:button];
     [button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(superView.mas_left).offset(10);
-        make.top.equalTo(superView.mas_top).offset(20);
+        make.top.equalTo(superView.mas_top).offset(STATUS_BAR_HEIGHT);
         make.width.mas_equalTo(30);
         make.height.mas_equalTo(30);
     }];

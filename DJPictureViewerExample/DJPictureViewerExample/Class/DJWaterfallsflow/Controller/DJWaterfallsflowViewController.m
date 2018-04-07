@@ -92,10 +92,15 @@ static NSString * const DJDataId = @"data";
     layout.delegate = self;
     
     // 创建CollectionView
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, STATUS_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - STATUS_BAR_HEIGHT - IPHONE_X_BOTTOM_HEIGHT) collectionViewLayout:layout];
     collectionView.backgroundColor = [UIColor whiteColor];
     collectionView.dataSource = self;
     collectionView.delegate = self;
+    if (@available(iOS 11.0, *)){
+        collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        collectionView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);//导航栏如果使用系统原生半透明的，top设置为64
+        collectionView.scrollIndicatorInsets = collectionView.contentInset;
+    }
     
     // 注册cell
     [collectionView registerClass:[DJLayoutCell class] forCellWithReuseIdentifier:DJDataId];
@@ -127,7 +132,6 @@ static NSString * const DJDataId = @"data";
 - (CGFloat)waterflowLayout:(DJWaterfallsflowLayout *)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
 {
     DJLayoutModel *layoutModel = self.dataArr[index];
-    
     return itemWidth * layoutModel.height / layoutModel.width;
 }
 
@@ -160,7 +164,6 @@ static NSString * const DJDataId = @"data";
 {
     UIView *superView = self.view;
     [UIButton buttonWithSuperView:superView target:self action:@selector(backEvent:)];
-    
 }
 
 - (void)backEvent:(UIButton *)sender
