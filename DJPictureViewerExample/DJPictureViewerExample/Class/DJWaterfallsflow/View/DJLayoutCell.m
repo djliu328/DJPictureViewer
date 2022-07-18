@@ -63,7 +63,8 @@
 - (void)setLayoutModel:(DJLayoutModel *)layoutModel
 {
     //1.设置图片内容
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:layoutModel.imgurl] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+//    [self.imageView sd_setImageWithURL:[NSURL URLWithString:layoutModel.imgurl] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    self.imageView.image = [UIImage imageNamed:layoutModel.imgurl];
     //2.设置价格内容
     self.priceLabel.text = layoutModel.price;
 }
