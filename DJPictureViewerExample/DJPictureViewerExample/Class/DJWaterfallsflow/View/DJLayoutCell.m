@@ -64,6 +64,7 @@
 {
     //1.设置图片内容
 //    [self.imageView sd_setImageWithURL:[NSURL URLWithString:layoutModel.imgurl] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    //1.1临时调整请图片内容为本地图片
     self.imageView.image = [UIImage imageNamed:layoutModel.imgurl];
     //2.设置价格内容
     self.priceLabel.text = layoutModel.price;
