@@ -53,6 +53,7 @@
 #pragma mark -- <UITableViewDelegate>
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
         [self presentViewController:[[DJWaterfallsflowViewController alloc] init] animated:YES completion:nil];
     }else  if (indexPath.row == 1)
